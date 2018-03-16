@@ -1,0 +1,7 @@
+<!--pages/news/news.wxml-->
+<scroll-view scroll-y class="scroll">
+  <view class='news'>
+    <rich-text nodes="{{nodes}}" class='rich-text'></rich-text>
+  </view>
+</scroll-view>
+

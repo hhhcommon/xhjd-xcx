@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='carousel'>
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" 
+    duration="{{duration}}">
+      <block wx:for="{{carousel}}" wx:key="{{item}}">
+        <swiper-item>
+          <navigator url="{{item.url}}" wx:if="{{item.url}}">
+            <image src="{{item.image}}" class="slide-image" mode='widthFix'/>
+          </navigator>
+          <view wx:else class='video-item' bindtap="palyVideo" data-src="{{item.src}}">
+            <image src="{{playIcon}}" class="play-icon"></image> 
+            <image src="{{item.image}}" class="slide-image video-image" mode='widthFix'></image> 
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <video src="{{videoUrl}}" controls="true" objectFit="fill" id="Video" autoplay="{{videoAutoplay}}" class="video {{videoPlaying ? 'show' : ''}}" bindpause="pauseVideo"></video>
+  </view>
+  <view class='news'>
+    <view class='title'>
+      <image src="{{baseUrl}}/static/images/imgs/Group@2x.png" mode='widthFix'/>
+    </view>
+    <view class='news-list'>
+    <swiper class="news-swiper" vertical="true" autoplay="true" display-multiple-items="5" interval="3000" duration="500">
+     <block wx:for="{{news}}" wx:key="{{item.url}}">
+      <swiper-item>
+        <navigator class='news-item {{item.type}}' url="/pages/news/news?url={{item.url}}">
+          <text>{{item.text}}</text>
+        </navigator>
+        </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class='links'>
+    <view class='links-item' wx:for="{{links}}" wx:key="{{item.link}}">
+      <image src="{{item.image}}" class='links-img' mode='widthFix'/>
+      <image src="{{item.btn}}" class='links-btn' mode='widthFix'/>
+    </view>
+  </view>
+  <view class='partners'>
+    <view class='partners-item' wx:for="{{partners}}" wx:key="{{item.link}}">
+      <navigator url="{{item.link}}">
+        <image src="{{item.image}}" class="partner-image" mode='widthFix'/>
+      </navigator>
+    </view>
+  </view>
+</view>

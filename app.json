@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/manage/manage",
+    "pages/index/index",
+    "pages/aboutus/aboutus",
+    "pages/information/information",
+    "pages/news/news"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新华金典",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#FF674C",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/homepage.png",
+        "selectedIconPath": "images/tabBar/homepage_fill.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "我要理财",
+        "iconPath": "images/tabBar/coupons.png",
+        "selectedIconPath": "images/tabBar/coupons_fill.png"
+      },
+      {
+        "pagePath": "pages/aboutus/aboutus",
+        "text": "关于我们",
+        "iconPath": "images/tabBar/group.png",
+        "selectedIconPath": "images/tabBar/group_fill.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "信息披露",
+        "iconPath": "images/tabBar/barrage.png",
+        "selectedIconPath": "images/tabBar/barrage_fill.png"
+      }
+    ]
+  }
+}

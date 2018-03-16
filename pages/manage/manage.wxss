@@ -1,0 +1,239 @@
+/* pages/manage/manage.wxss */
+.top-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,.26);
+  color: #fff;
+  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/financing_header.png');
+  background-size: auto 100%;
+  background-position: center;
+}
+.wrapper{
+  padding: 20rpx;
+}
+.title-wrapper{
+  color: #333;
+  margin: 40rpx 20rpx;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title text{
+  font-size: 35rpx;
+  margin: 0 10rpx;
+}
+.title::before{
+  width: 100rpx;
+  height: 1px;
+  background-color: #ddd;
+  vertical-align: middle;
+  display: inline-block;
+  content: '';
+}
+.title::after{
+  width: 100rpx;
+  height: 1px;
+  background-color: #ddd;
+  vertical-align: middle;
+  display: inline-block;
+  content: '';
+}
+.sub-title{
+  font-size: 20rpx;
+  color: #666;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.new-welfare{
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 40rpx;
+}
+.welfare-item{
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  border-radius: 20rpx;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 30rpx 0;
+  margin-bottom: 30rpx;
+}
+.welfare-item:first-child{
+  margin-right: 10rpx;
+  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/red-bg.png');
+}
+.welfare-item:last-child{
+  margin-left: 10rpx;
+  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/green-bg.png');
+}
+.welfare-title{
+  font-size: 35rpx;
+  margin-bottom: 15rpx;
+}
+.welfare-item .line{
+  height: 1rpx;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.welfare-item .number{
+  font-size: 80rpx;
+  margin: 20rpx 0 10rpx;
+}
+.welfare-item .explain{
+  font-size: 25rpx;
+  margin-bottom: 20rpx;
+}
+.welfare-item .des{
+  font-size: 30rpx;
+}
+.welfare-item .qr-image{
+  width: 45%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10rpx;
+  border-top-right-radius: 0;
+  padding: 10rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.welfare-item .qr-image image{
+  width: 100%;
+  height: auto;
+}
+.welfare-item .qr-image .right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background-color: rgba(255,255,255,.5);
+  border-radius: 0 0 20rpx;
+  font-size: 20rpx;
+  padding: 10rpx 12rpx;
+}
+
+.product-list{
+  margin: 40rpx 0;
+}
+.product-list .product-item{
+  border: 1px solid #eee;
+  margin-bottom: 20rpx;
+}
+.product-list .product-item:last-child{
+  margin-bottom: 0;
+}
+.product-list .product-item .header{
+  height: 80rpx;
+  padding: 0 40rpx;
+  border-bottom: 1px solid #e1e2e3;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+}
+.product-list .product-item .header span{
+  font-size: 40rpx;
+  color: #454545;
+}
+.product-list .product-item .header .embellish{
+  height: 60rpx;
+  line-height: 56rpx;
+  color: #fff;
+  font-size: 10px;
+  padding: 0 20rpx 0 30rpx; 
+  border-radius: 10rpx;
+  margin: 2rpx 0 0 12rpx;
+  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/Combined_Shape.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.product-list .product-item .content{
+  padding: 50rpx 0 0 0;
+  margin: 0;
+  overflow: hidden;
+}
+.product-list .product-item .content .data-wrapper{
+  display: flex;
+}
+.product-list .product-item .data-item{
+  flex: 1;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-list .product-item .data-item::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 1px;
+  background-color: #e1e2e3;
+}
+.product-list .product-item .data-item:last-child::after{
+  display: none;
+}
+.product-list .product-item .data-item .description{
+  font-size: 25rpx;
+  color: #666666;
+}
+.product-list .product-item .data-item .num{
+  font-size: 40rpx;
+  color: #666;
+}
+.product-list .product-item .data-item .num>span{
+  font-size: 20rpx;
+  margin-left: 6rpx;
+}
+.product-list .product-item .data-item:first-child .num{
+  font-size: 50rpx;
+  color: #F76E62;
+}
+.product-list .product-item .invest-btn{
+  width: 240rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #F76E62;
+  border-radius: 60rpx;
+  border: 1px solid #F76E62;
+  margin: 40rpx auto;
+}
+.product-list .product-item .invest-btn:hover{
+  background-color: #F76E62;
+  color: #fff;
+}
+
+.modal-image{
+  position: relative;
+}
+.modal-close{
+  position: absolute;
+  right: 120rpx;
+  top: 50rpx;
+  font-size: 60rpx;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.modal-image image{
+  width: 100%;
+  height: auto;
+}
+.modal-layer{ 
+  box-shadow: 0; 
+}

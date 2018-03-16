@@ -1,0 +1,106 @@
+/**index.wxss**/
+.container{
+  position: relative;
+}
+/* 轮播图 */
+.carousel .swiper{
+   height: 400rpx; 
+}
+.carousel .video-item{
+  position: relative;
+}
+.carousel .play-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -45rpx;
+  margin-left: -40rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.carousel .video{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 400rpx; 
+  display: none;
+}
+.carousel .video.show{
+  display: block;
+}
+.carousel .swiper .slide-image{
+  width: 100%;
+}
+/* 新闻资讯 */
+.news .title{
+  text-align: center;
+  margin: 25rpx auto 5rpx;
+}
+.news .title image{
+   width: 240rpx;
+}
+.news .news-list{
+  padding: 0.5rem 1rem;
+  font-size: 35rpx;
+}
+.news .news-swiper{
+  height: 400rpx;
+}
+.news .news-item{
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0.5rem;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.news .news-item text::before{
+  content: "• ";
+}
+.news .news-item.xhw{
+  color: #FF694D;
+  text-indent: -17rpx;
+}
+.news .news-item.xhw text::before{
+  content: "";
+}
+.links{
+  display: flex;
+  padding: 10rpx;
+}
+.links .links-item{
+  position: relative;
+  flex: 1;
+}
+.links .links-item .links-img{
+  width: 100%;
+  border-radius: 5rpx;
+}
+.links .links-item .links-btn{
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  width: 35%;
+}
+.links .links-item::after{
+  content: '立即进入';
+  position: absolute;
+  right: 10%;
+  top: 42%;
+  width: 35%;
+  font-size: 20rpx;
+  text-align: center;
+  color: #fff;
+}
+.partners{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40rpx 0;
+}
+.partners .partners-item{
+  margin: 10rpx;
+}
+.partners .partner-image{
+  width: 200rpx;
+}

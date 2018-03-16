@@ -1,0 +1,11 @@
+/* pages/news/news.wxss */
+.news{
+  background-color: #fff;
+  padding: 30rpx 20rpx; 
+  line-height: 1.5;
+}
+.rich-image{
+  width: 100% !important;
+  height: auto;
+  margin: 10rpx 0;
+}
