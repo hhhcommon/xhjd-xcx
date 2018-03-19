@@ -51,23 +51,49 @@
             </view>
             <view class="data-item">
               <view class="description">起投金额</view>
-              <view class="num">{{Math.floor(item.atleastMoney / 100)}}<text>元</text></view>
+              <view class="num">{{(item.atleastMoney / 100)}}<text>元</text></view>
             </view>
           </view>
           <view class="invest-btn" bindtap='showModal'>立即投资</view>
         </view>
       </view>
       </block>
+      <view class='null-product' wx:if="{{productList.length <= 0}}">暂无产品</view>
     </view>
     <view class='title-wrapper'>
       <view class='title'><text>仅需3步，轻松理财</text></view>
     </view>
-    <view class='step-wrapper'></view>
+    <view class='step-wrapper'>
+      <view class='step-item'>
+        <view class='num'>01</view>
+        <view class='text'>扫描下载APP</view>
+        <view class='img'>
+          <image src='{{baseUrl}}/static/images/download.png' mode='widthFix'/>
+        </view>
+        <view class='des'>苹果、安卓手机都适用</view>
+      </view>
+      <view class='step-item'>
+        <view class='num'>02</view>
+        <view class='text'>注册账户</view>
+        <view class='img'>
+          <image src='{{baseUrl}}/static/images/mobile1.png' style='width: 70%;' mode='widthFix'/>
+        </view>
+        <view class='des'>我的」-点击「注册送红包」</view>
+      </view>
+      <view class='step-item'>
+        <view class='num'>03</view>
+        <view class='text'>绑卡认证理财</view>
+        <view class='img'>
+          <image src='{{baseUrl}}/static/images/mobile2.png' mode='widthFix'/>
+        </view>
+        <view class='des'>点击「立即投资」绑定银行卡</view>
+      </view>
+    </view>
   </view>
   <modal id="Modal">
     <view slot="body" class='modal-body'>
       <view class='modal-image'>
-        <view class='modal-close'>×</view>
+        <view class='modal-close' catchtap='cloceModal'>×</view>
         <image src='{{baseUrl}}/static/images/QR_img.png' mode='widthFix'/>
       </view>
     </view>

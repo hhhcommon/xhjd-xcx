@@ -51,5 +51,8 @@ Page({
   },
   showModal: function() {
     this.Modal.showModal();
+  },
+  cloceModal: function() {
+    this.Modal.hideModal()
   }
 })

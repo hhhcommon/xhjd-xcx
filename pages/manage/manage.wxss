@@ -216,14 +216,75 @@
   background-color: #F76E62;
   color: #fff;
 }
+.null-product{
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+  margin: 100rpx 0;
+}
+
+.step-wrapper{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* .step-item::before{
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 16.66%;
+  right: 16.66%;
+  height: 1px;
+  background-color: #ebebeb;
+} */
+.step-item{
+  flex: 1;
+  margin: 40rpx 0 10rpx 0;
+}
+.step-item .num{
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-image: linear-gradient(-180deg, #FAFAFA 0%, #F2F2F2 100%);
+  border: 1px solid #E1E1E1;
+  border-radius: 60rpx;
+  font-size: 35rpx;
+  color: #454545;
+  margin: 0 auto;
+  text-align: center;
+}
+.step-item .text{
+  font-size: 38rpx;
+  color: #454545;
+  text-align: center;
+  margin: 20rpx 0 30rpx 0; 
+}
+.step-item .img{
+  padding: 20rpx;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.step-item .img image{
+  width: 100%;
+  height: auto;
+}
+.step-item .des{
+  font-size: 30rpx;
+  color: #666666;
+  margin-top: 20rpx;
+  text-align: center;
+}
 
 .modal-image{
   position: relative;
 }
 .modal-close{
   position: absolute;
-  right: 120rpx;
-  top: 50rpx;
+  right: 50rpx;
+  top: 8rpx;
   font-size: 60rpx;
   color: #fff;
   cursor: pointer;
@@ -233,7 +294,4 @@
 .modal-image image{
   width: 100%;
   height: auto;
-}
-.modal-layer{ 
-  box-shadow: 0; 
 }

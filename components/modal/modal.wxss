@@ -38,7 +38,6 @@
 
 .modal-layer-radius {
   
-    
 }
 
 .modal-layer{
@@ -48,8 +47,7 @@
   display: flex;
   flex-direction: column;
   z-index: 98;   
-
-  box-shadow: 0 4rpx 14rpx rgba(0,0,0,.4); 
+  /* box-shadow: 0 4rpx 14rpx rgba(0,0,0,.4);  */
 }
 
 
