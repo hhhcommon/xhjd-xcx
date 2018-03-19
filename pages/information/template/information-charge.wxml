@@ -1,0 +1,7 @@
+<template name="information-charge">
+  <view class='wrapper information-charge' wx:if="{{selectedId === '7'}}">
+    <view class='column'>
+      <text class='title'>收费标准</text>
+    </view>
+  </view>
+</template>

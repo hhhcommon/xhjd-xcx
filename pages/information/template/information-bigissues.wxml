@@ -1,0 +1,7 @@
+<template name="information-bigissues">
+  <view class='wrapper information-bigissues' wx:if="{{selectedId === '6'}}">
+    <view class='column'>
+      <text class='title'>重大事项</text>
+    </view>
+  </view>
+</template>

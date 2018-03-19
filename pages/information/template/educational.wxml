@@ -1,0 +1,7 @@
+<template name="educational">
+  <view class='wrapper about-contact' wx:if="{{selectedId === '9'}}">
+    <view class='column'>
+      <text class='title'>投资者教育</text>
+    </view>
+  </view>
+</template>

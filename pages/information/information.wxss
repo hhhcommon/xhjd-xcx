@@ -1,1 +1,5 @@
 /* pages/information/information.wxss */
+@import '/common/css/layout.wxss';
+.top-bg{
+  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/information.png');
+}

@@ -1,0 +1,7 @@
+<template name="information-runreports">
+  <view class='wrapper information-runreports' wx:if="{{selectedId === '8'}}">
+    <view class='column'>
+      <text class='title'>运营报告</text>
+    </view>
+  </view>
+</template>

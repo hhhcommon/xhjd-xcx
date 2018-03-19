@@ -1,0 +1,34 @@
+<template name="about-contact">
+  <view class='wrapper about-contact' wx:if="{{selectedId === '4'}}">
+    <view class='column'>
+      <text class='title'>联系我们</text>
+      <map class='map' 
+           id="map" 
+           longitude="{{map.longitude}}" 
+           latitude="{{map.latitude}}" 
+           scale="16"
+           markers="{{map.markers}}"
+           show-location></map>
+      <view class="contact-information">
+        <view class='information-item'>客服电话：<text class='phone' bindtap='callup'>400-157-6800</text></view>
+        <view class='information-item'>客服工作时间：工作日09:00-21:00  节假日09:00-17:00</view>
+        <view class='information-item'>公司地址：浙江省杭州市文一西路郡原•公元里</view>
+        <view class='information-item'>电子邮箱：contact@xinhuajindian.com</view>
+      </view>
+      <view class='qr-imgs'>
+        <view class='qr-img'>
+          <view class='title'>新华金典理财APP二维码</view>
+          <view class='img'>
+            <image src='{{baseUrl}}/static/images/download.png' mode='widthFix'/>
+          </view>
+        </view>
+        <view class='qr-img'>
+          <view class='title'>新华金典公众号二维码</view>
+          <view class='img'>
+            <image src='{{baseUrl}}/static/images/xhjdnet.png' mode='widthFix'/>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

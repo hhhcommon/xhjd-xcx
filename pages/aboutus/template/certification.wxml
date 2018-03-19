@@ -1,0 +1,19 @@
+<template name="certification">
+  <view class='wrapper certification' wx:if="{{selectedId === '3'}}">
+    <view class='column'>
+      <text class='title'>资质证书</text>
+      <view class='list'>
+        <image src='{{baseUrl}}/static/images/business.png' mode='widthFix'/>
+        <text>营业执照</text>
+        <image src='{{baseUrl}}/static/images/chinaNet.png' mode='widthFix'/>
+        <text>增值电信业务许可证</text>
+        <image src='{{baseUrl}}/static/images/ios.png' mode='widthFix'/>
+        <text>ios软件著作权证</text>
+        <image src='{{baseUrl}}/static/images/android.png' mode='widthFix'/>
+        <text>Android软件著作权证</text>
+        <image src='{{baseUrl}}/static/images/permits.png' mode='widthFix'/>
+        <text>开户许可证</text>
+      </view>
+    </view>
+  </view>
+</template>

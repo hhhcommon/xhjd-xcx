@@ -1,0 +1,29 @@
+<template name="company-profile">
+  <view class='wrapper' wx:if="{{selectedId === '1'}}">
+    <view class='column'>
+      <text class='title'>公司简介</text>
+      <image src='{{baseUrl}}/static/images/about_compony.png' mode='widthFix'/>
+      <text class="paragraph">新华金典财富管理股份有限公司成立于2015年，注册资本2亿元，公司第一大股东中金国信（杭州）实业有限公司为人民日报三级子公司。“新华金典”于2016年获得国家注册商标，是<text class='red'>“新华网·互联网经济”战略合作伙伴</text>。公司总部位于杭州市西湖区公元里，法人代表顾卫俊。</text>
+      <text class='paragraph'>新华金典致力于提供优质多元的理财产品和个性定制化的金融服务，以配套更契合用户需求的财富管理、增值方案为核心竞争力。新华金典不仅是客户在个人财富管理方面的优秀合作伙伴，而且还是社会营造诚信健康金融环境，助推普惠金融发展的重要帮手。</text>
+      <text class='paragraph'>新华金典的核心运营团队成员均为拥有多年银行从业经验、精通互联网金融的行业精英；在社会各界的助力下，通过建立一站式投资理财服务，正逐渐成为以“安全、专业、高效”为行业标识的全国知名品牌。</text>
+    </view>
+    <view class='column'>
+      <text class='title'>总裁寄语</text>
+      <image src='{{baseUrl}}/static/images/about_hope.png' mode='widthFix'/>
+      <text class='paragraph'>新华金典作为一名普惠金融的践行者，我们坚信普惠的社会价值，希望在投资方与融资方之间搭建起一座信息的桥梁，让社会资本可以安全、准确、高效地与市场需求对接。</text>
+      <text class='paragraph'>我们将以实现百年基业为战略目标，致力于成为新时代的造福者，让新华金典成为一个值得信赖、极具市场竞争力的财富管理平台。</text>
+      <view class='ceo-sign'><text>———— 总裁： </text><image src='{{baseUrl}}/static/images/signature.png' class='sign' mode='widthFix'/></view>
+    </view>
+    <view class='column'>
+      <text class='title'>高管介绍</text>
+      <image src='{{baseUrl}}/static/images/about_header_1.png' mode='widthFix'/>
+      <image src='{{baseUrl}}/static/images/about_header_3.png' mode='widthFix'/>
+      <image src='{{baseUrl}}/static/images/about_header_2.png' mode='widthFix'/>
+    </view>
+    <view class='column'>
+      <text class='title'>企业愿景</text>
+      <image src='{{baseUrl}}/static/images/about_leader.png' mode='widthFix'/>
+      <text class='paragraph'>“十年树木，百年树人”，为打造金融行业百年品牌，新华金典始终以新华网、人民日报这两大中国权威媒体为榜样，砥砺前行。立互联网金融潮头，做新时代行业标杆，新华金典志在打造一款具有高品牌辨识度、高用户认同感的智能化创新金融产品，为普惠金融事业发展作出贡献。</text>
+    </view>
+  </view>
+</template>

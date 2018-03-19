@@ -1,0 +1,28 @@
+.table{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+.table-row{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #333;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  line-height: 1.5;
+}
+.table-row:nth-child(2){
+  background: #fff;
+}
+.table-row:last-child{
+  border-bottom: none;
+}
+.table-item{
+  width: 40%;
+  padding: 30rpx 5%;
+  border-right: 1px solid #eee;
+}
+.table-item:last-child{
+  border-right: none;
+}

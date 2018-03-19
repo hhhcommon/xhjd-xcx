@@ -1,2 +1,28 @@
 <!--pages/information/information.wxml-->
-<text>pages/information/information.wxml</text>
+<import src="./template/information-business.wxml" />
+<import src="./template/information-shareholder.wxml" />
+<import src="./template/information-organization.wxml" />
+<import src="./template/information-channel.wxml" />
+<import src="./template/information-records.wxml" />
+<import src="./template/information-bigissues.wxml" />
+<import src="./template/information-charge.wxml" />
+<import src="./template/information-runreports.wxml" />
+<import src="./template/educational.wxml" />
+<import src="./template/information-statement.wxml" />
+
+<view class='container information'>
+  <tab list="{{list}}" selectedId="{{selectedId}}" bind:tabChange="tabChange"></tab>
+  <view class='top-bg'>
+    <text>“新华网 • 互联网经济”战略合作伙伴</text>
+  </view>
+  <template is="information-business" data="{{ baseUrl, selectedId, business }}"></template>
+  <template is="information-shareholder" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-organization" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-channel" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-records" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-bigissues" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-charge" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-runreports" data="{{ baseUrl, selectedId }}"></template>
+  <template is="educational" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-statement" data="{{ baseUrl, selectedId }}"></template>
+</view>

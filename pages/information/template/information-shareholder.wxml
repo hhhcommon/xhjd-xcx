@@ -1,0 +1,7 @@
+<template name="information-shareholder">
+  <view class='wrapper information-shareholder' wx:if="{{selectedId === '2'}}">
+    <view class='column'>
+      <text class='title'>股东信息</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,35 @@
+<view class="tab">
+  <block wx:if="{{ scroll }}">
+    <scroll-view
+      class="tab__bd tab__bd--scroll {{ fixed ? 'tab__bd--fixed' : '' }}"
+      scroll-x="true"
+      style="height: {{ height ? (height + 'rpx') : 'auto' }}"
+    >
+      <template
+        is="tab-list"
+        data="{{ list: list, selectedId: selectedId, componentId }}">
+      </template>
+    </scroll-view>
+  </block>
+  <block wx:else>
+    <view class="tab__bd {{ fixed ? 'tab__bd--fixed' : '' }}">
+      <template
+        is="tab-list"
+        data="{{ list: list, selectedId: selectedId, componentId }}">
+      </template>
+    </view>
+  </block>
+</view>
+
+<template name="tab-list">
+  <view
+    wx:for="{{ list }}"
+    wx:key="id"
+    class="tab__item {{ selectedId == item.id ? 'tab__item--selected' : '' }}"
+    data-component-id="{{ componentId }}"
+    data-item-id="{{ item.id }}"
+    bindtap="handleTabChange"
+  >
+    <view class="tab__title">{{ item.title }}</view>
+  </view>
+</template>

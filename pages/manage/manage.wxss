@@ -1,19 +1,7 @@
 /* pages/manage/manage.wxss */
+@import '/common/css/layout.wxss';
 .top-bg{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200rpx;
-  font-size: 32rpx;
-  font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0,0,0,.26);
-  color: #fff;
   background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/financing_header.png');
-  background-size: auto 100%;
-  background-position: center;
-}
-.wrapper{
-  padding: 20rpx;
 }
 .title-wrapper{
   color: #333;

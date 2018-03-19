@@ -1,0 +1,7 @@
+<template name="information-records">
+  <view class='wrapper information-records' wx:if="{{selectedId === '5'}}">
+    <view class='column'>
+      <text class='title'>备案信息</text>
+    </view>
+  </view>
+</template>

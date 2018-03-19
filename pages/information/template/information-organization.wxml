@@ -1,0 +1,7 @@
+<template name="information-organization">
+  <view class='wrapper information-organization' wx:if="{{selectedId === '3'}}">
+    <view class='column'>
+      <text class='title'>组织架构</text>
+    </view>
+  </view>
+</template>

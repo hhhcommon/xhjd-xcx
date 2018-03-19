@@ -1,0 +1,7 @@
+<template name="information-statement">
+  <view class='wrapper information-statement' wx:if="{{selectedId === '10'}}">
+    <view class='column'>
+      <text class='title'>信息披露声明</text>
+    </view>
+  </view>
+</template>

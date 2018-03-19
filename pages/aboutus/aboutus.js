@@ -1,66 +1,54 @@
 // pages/aboutus/aboutus.js
+const baseUrl = require('../../config').baseUrl;
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    baseUrl,
+    list: [{
+      id: '1',
+      title: '关于我们'
+    }, {
+      id: '2',
+      title: '发展历程'
+    }, {
+      id: '3',
+      title: '资质认证'
+    }, {
+      id: '4',
+      title: '联系我们'
+    }, {
+      id: '5',
+      title: '人才招聘'
+    }],
+    selectedId: '1',
+    map: {
+      longitude: 120.0597989226,
+      latitude: 30.2881204532,
+      markers: [{
+        iconPath: '/images/logo/logo_map.png',
+        id: 0,
+        title: '新华金典',
+        latitude: 30.2881204532,
+        longitude: 120.0597989226,
+        width: 120,
+        height: 60
+      }],
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
   
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
   
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  tabChange: function (e) {
+    const { selectedId } = e.detail
+    this.setData({
+      selectedId
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  callup: function () {
+    wx.makePhoneCall({
+      phoneNumber: '400-157-6800'
+    })
   }
 })

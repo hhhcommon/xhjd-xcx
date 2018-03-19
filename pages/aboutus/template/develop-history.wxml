@@ -1,0 +1,57 @@
+<template name="develop-history">
+  <view class='wrapper develop-history' wx:if="{{selectedId === '2'}}">
+    <view class='column'>
+      <text class='title'>发展历程</text>
+      <view class="time-line">
+        <view class="time-title">2017</view>
+        <view class="incident">
+          <text>2017年10月</text>
+          <view class='dot'></view>
+          <text>获得ICP许可证</text>
+        </view>
+        <view class="incident">
+          <text>人民日报社三级子公司中金国信（杭州） 实业有限公司入股 ，股份占比67.65%</text>
+          <view class='dot'></view>
+          <text>2017年10月</text>
+        </view>
+        <view class="incident">
+          <text>2017年9月</text>
+          <view class='dot'></view>
+          <text>作为“新华网•互联网经济”战略合作伙伴和分论坛主办方之一参加2017年中国国际商标品牌节</text>
+        </view>
+        <view class="incident">
+          <text>上线第三方支付--宝付支付</text>
+          <view class='dot'></view>
+          <text>2017年8月</text>
+        </view>
+        <view class="incident">
+          <text>2017年8月</text>
+          <view class='dot'></view>
+          <text>获得软件著作权证</text>
+        </view>
+        <view class="time-title">2016</view>
+        <view class="incident">
+          <text>“新华金典”获得国家注册商标</text>
+          <view class='dot'></view>
+          <text>2016年10月</text>
+        </view>
+        <view class="time-title">2015</view>
+        <view class="incident">
+          <text>2015年8月</text>
+          <view class='dot'></view>
+          <text>作为承办方参加新华网浙江分公司主办的 《互联网金融风险防控“+”之道》主题论坛</text>
+        </view>
+        <view class="incident">
+          <text>新华金典理财APP上线</text>
+          <view class='dot'></view>
+          <text>2015年6月</text>
+        </view>
+        <view class="incident">
+          <text>2015年5月</text>
+          <view class='dot'></view>
+          <text>新华金典财富管理股份有限公司成立</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

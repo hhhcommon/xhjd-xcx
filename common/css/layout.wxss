@@ -1,0 +1,46 @@
+.top-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,.26);
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.wrapper{
+  padding: 20rpx;
+}
+.column{
+  margin-bottom: 60rpx;
+}
+.column > .title{
+  display: inline-block;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #333;
+  background-color: #f0f0f0;
+  background: linear-gradient(-45deg, transparent 20rpx, #f0f0f0 0);
+  border-left: 2px solid #FF674C;
+  padding: 0 30rpx;
+  margin: 30rpx 0 20rpx 0;
+}
+.column > image{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20rpx 0 30rpx 0;
+}
+.column > .paragraph{
+  display: block;
+  font-size: 35rpx;
+  color: #333;
+  line-height: 1.5;
+  text-indent: 60rpx;
+  letter-spacing: 3rpx;
+  margin-bottom: 30rpx;
+}

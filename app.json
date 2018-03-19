@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/information/information",
+    "pages/aboutus/aboutus",
     "pages/manage/manage",
     "pages/index/index",
-    "pages/aboutus/aboutus",
-    "pages/information/information",
     "pages/news/news"
   ],
   "window":{

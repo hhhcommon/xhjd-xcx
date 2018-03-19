@@ -1,2 +1,19 @@
 <!--pages/aboutus/aboutus.wxml-->
-<text>pages/aboutus/aboutus.wxml</text>
+<import src="./template/company-profile.wxml" />
+<import src="./template/develop-history.wxml" />
+<import src="./template/certification.wxml" />
+<import src="./template/about-contact.wxml" />
+<import src="./template/recruit.wxml" />
+
+<view class='container aboutus'>
+  <tab list="{{list}}" selectedId="{{selectedId}}" bind:tabChange="tabChange"></tab>
+  <view class='top-bg'>
+    <text>“新华网 • 互联网经济”战略合作伙伴</text>
+  </view>
+  <template is="company-profile" data="{{ baseUrl, selectedId }}"></template>
+  <template is="develop-history" data="{{ baseUrl, selectedId }}"></template>
+  <template is="certification" data="{{ baseUrl, selectedId }}"></template>
+  <template is="about-contact" data="{{ baseUrl, selectedId, map}}"></template>
+  <template is="recruit" data="{{ baseUrl, selectedId }}"></template>
+
+</view>

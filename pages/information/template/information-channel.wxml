@@ -1,0 +1,7 @@
+<template name="information-channel">
+  <view class='wrapper information-channel' wx:if="{{selectedId === '4'}}">
+    <view class='column'>
+      <text class='title'>官方渠道</text>
+    </view>
+  </view>
+</template>
