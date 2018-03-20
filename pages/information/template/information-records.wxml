@@ -2,6 +2,7 @@
   <view class='wrapper information-records' wx:if="{{selectedId === '5'}}">
     <view class='column'>
       <text class='title'>备案信息</text>
+      <table list="{{ records.list }}" align="{{ records.align }}" width="{{ records.width }}"></table>
     </view>
   </view>
 </template>

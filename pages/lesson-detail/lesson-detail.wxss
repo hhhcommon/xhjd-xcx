@@ -1,0 +1,11 @@
+/* pages/lesson-detail.wxss */
+.lesson-detail{
+  background-color: #fff;
+  line-height: 1.5;
+  font-size: 0;
+}
+.rich-image{
+  width: 100% !important;
+  height: auto;
+  margin: 0;
+}

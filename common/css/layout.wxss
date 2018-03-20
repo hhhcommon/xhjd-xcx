@@ -44,3 +44,7 @@
   letter-spacing: 3rpx;
   margin-bottom: 30rpx;
 }
+
+text.red{
+  color: #FF674C;
+}

@@ -13,6 +13,10 @@ Component({
     align: {
       type: Array,
       value: ['center', 'center']
+    },
+    width: {
+      type: Array,
+      value: [50, 50]
     }
   },
   data: {

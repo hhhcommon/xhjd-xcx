@@ -2,6 +2,7 @@
   <view class='wrapper information-statement' wx:if="{{selectedId === '10'}}">
     <view class='column'>
       <text class='title'>信息披露声明</text>
+      <image src='{{baseUrl}}/static/images/statement.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/statement.png"/>
     </view>
   </view>
 </template>

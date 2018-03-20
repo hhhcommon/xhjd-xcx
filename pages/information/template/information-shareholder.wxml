@@ -2,6 +2,8 @@
   <view class='wrapper information-shareholder' wx:if="{{selectedId === '2'}}">
     <view class='column'>
       <text class='title'>股东信息</text>
+      <table list="{{ shareholder.list }}" width="{{ shareholder.width }}"></table>
+      <image src='{{baseUrl}}/static/images/shareholders.png' bindtap='previewImage' data-url="{{baseUrl}}/static/images/shareholders.png" mode='widthFix'/>
     </view>
   </view>
 </template>

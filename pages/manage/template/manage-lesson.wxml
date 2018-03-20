@@ -1,0 +1,10 @@
+<import src="/templates/card/card" />
+
+<template name="manage-lesson">
+  <view class='wrapper manage-lesson' wx:if="{{selectedId === '2'}}">
+    <view class='title-wrapper'>
+      <view class='title'><text>金典理财小课堂</text></view>
+    </view>
+    <template is="card" data="{{ list: lesson.list }}"></template>
+  </view>
+</template>

@@ -1,13 +1,33 @@
 const baseUrl = require('../../config').baseUrl;
-import { getManageList } from '../../api/manage.js';
+import { getManageList, getLessonList } from '../../api/manage.js';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    baseUrl: baseUrl,
-    productList: []
+    baseUrl,
+    list: [{
+      id: '1',
+      title: '我要理财'
+    }, {
+      id: '2',
+      title: '理财小课堂'
+    }],
+    selectedId: '1',
+    productList: [],
+    lesson: {
+      list: [{
+        img: 'http://xinhuagolden.oss-cn-hzfinance.aliyuncs.com/image/mobile_img/banner/cdaac0d1-d888-47f3-8b96-64d864a4b717.png',
+        url: '/pages/lesson-detail/lesson-detail?url=http://h5.xinhuajindian.com/xhjd-h5/views/home/third-phase.html'
+      }, {
+        img: 'http://xinhuagolden.oss-cn-hzfinance.aliyuncs.com/image/mobile_img/notice/slt/34d757e4-bab3-486d-9177-badf4ca45a56.png',
+        url: '/pages/lesson-detail/lesson-detail?url=http://www.xinhuajindian.com/xhjd-h5/views/home/second-phase.html'
+      }, {
+        img: 'http://xinhuagolden.oss-cn-hzfinance.aliyuncs.com/image/mobile_img/notice/slt/61280bcd-af41-4016-a7f0-22adafd39f99.png',
+        url: '/pages/lesson-detail/lesson-detail?url=http://www.xinhuajindian.com/xhjd-h5/views/home/network-loan.html'
+      }]
+    }
   },
 
   /**
@@ -30,8 +50,17 @@ Page({
   onShow: function () {
   
   },
+  tabChange: function (e) {
+    const { selectedId } = e.detail
+    this.setData({
+      selectedId
+    })
+  },
   getList: function () {
-    const _this = this;
+    this.getManageProduct()
+    this.getManageLesson()
+  },
+  getManageProduct: function() {
     getManageList().then((res) => {
       let list = res.data.productList;
       const newList = [];
@@ -49,6 +78,23 @@ Page({
       })
     })
   },
+  getManageLesson: function() {
+    getLessonList().then((res) => {
+      const list = res.data.financialManagementClassInfoList;
+      const lessonList = []
+      if (list.length > 0) {
+        list.forEach((item) => {
+          lessonList.push({
+            img: item.imgUrl,
+            url: `/pages/lesson-detail/lesson-detail?url=${item.hdUrl}`
+          })
+        })
+        this.setData({
+          ['lesson.list']: lessonList
+        })
+      }
+    })
+  },  
   showModal: function() {
     this.Modal.showModal();
   },

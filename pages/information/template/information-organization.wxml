@@ -2,6 +2,12 @@
   <view class='wrapper information-organization' wx:if="{{selectedId === '3'}}">
     <view class='column'>
       <text class='title'>组织架构</text>
+      <text class="paragraph">新华金典运营团队采取精英化管理、选拔模式，核心高管团队成员均拥有丰富银行、金融领域的从业经验，同时精通互联网金融产业。随着公司的招贤纳士，越来越多的行业佼佼者加入新华金典，其中不乏曾就职于美国摩根大通、英国巴克莱、瑞士信贷等世界知名银行的精英团队成员。</text>
+      <image src='{{baseUrl}}/static/images/jiagou.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/jiagou.png" data-id="organization"/>
+    </view>
+    <view class='column'>
+      <text class='title'>从业人员</text>
+      <image src='{{baseUrl}}/static/images/scale-spread.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/scale-spread.png" data-id="organization"/>
     </view>
   </view>
 </template>

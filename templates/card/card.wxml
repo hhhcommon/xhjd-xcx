@@ -1,0 +1,9 @@
+<template name="card">
+<view class='card-list'>
+  <view class='card-item' wx:for="{{ list }}" wx:key="url">
+    <navigator url="{{item.url}}">
+      <image src='{{item.img}}' mode='widthFix' class='card-image'/>
+    </navigator>
+  </view>
+</view>
+</template>

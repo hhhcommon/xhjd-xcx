@@ -2,26 +2,33 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #eee;
+  margin: 40rpx 0;
 }
 .table-row{
   display: flex;
-  align-items: center;
-  font-size: 30rpx;
+  align-items: stretch;
+  font-size: 28rpx;
   color: #333;
-  background: #f9f9f9;
+  background: #fff;
   border-bottom: 1px solid #eee;
   line-height: 1.5;
 }
-.table-row:nth-child(2){
-  background: #fff;
+.table-row:nth-child(odd){
+  background: #f9f9f9;
 }
 .table-row:last-child{
   border-bottom: none;
 }
 .table-item{
-  width: 40%;
-  padding: 30rpx 5%;
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 30rpx 0;
   border-right: 1px solid #eee;
+}
+.table-item > text{
+  width: 90%;
+  padding: 0 5%;
 }
 .table-item:last-child{
   border-right: none;

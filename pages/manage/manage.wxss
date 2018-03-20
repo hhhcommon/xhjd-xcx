@@ -1,5 +1,7 @@
 /* pages/manage/manage.wxss */
 @import '/common/css/layout.wxss';
+@import '/templates/card/card.wxss';
+
 .top-bg{
   background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/financing_header.png');
 }

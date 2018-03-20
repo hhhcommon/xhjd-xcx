@@ -16,9 +16,9 @@
     </view>
     <view class='column'>
       <text class='title'>高管介绍</text>
-      <image src='{{baseUrl}}/static/images/about_header_1.png' mode='widthFix'/>
-      <image src='{{baseUrl}}/static/images/about_header_3.png' mode='widthFix'/>
-      <image src='{{baseUrl}}/static/images/about_header_2.png' mode='widthFix'/>
+      <image src='{{baseUrl}}/static/images/about_header_1.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/about_header_1.png" data-id="companyProfile"/>
+      <image src='{{baseUrl}}/static/images/about_header_3.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/about_header_3.png" data-id="companyProfile"/>
+      <image src='{{baseUrl}}/static/images/about_header_2.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/about_header_2.png" data-id="companyProfile"/>
     </view>
     <view class='column'>
       <text class='title'>企业愿景</text>

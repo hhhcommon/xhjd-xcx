@@ -1,0 +1,16 @@
+<template name="qr-code">
+  <view class='qr-imgs'>
+    <view class='qr-img'>
+      <view class='title'>新华金典理财APP二维码</view>
+      <view class='img'>
+        <image src='{{baseUrl}}/static/images/download.png' mode='widthFix'/>
+      </view>
+    </view>
+    <view class='qr-img'>
+      <view class='title'>新华金典公众号二维码</view>
+      <view class='img'>
+        <image src='{{baseUrl}}/static/images/xhjdnet.png' mode='widthFix'/>
+      </view>
+    </view>
+  </view>
+</template>

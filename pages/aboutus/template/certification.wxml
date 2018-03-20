@@ -3,15 +3,15 @@
     <view class='column'>
       <text class='title'>资质证书</text>
       <view class='list'>
-        <image src='{{baseUrl}}/static/images/business.png' mode='widthFix'/>
+        <image src='{{baseUrl}}/static/images/business.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/business.png" data-id="certification"/>
         <text>营业执照</text>
-        <image src='{{baseUrl}}/static/images/chinaNet.png' mode='widthFix'/>
+        <image src='{{baseUrl}}/static/images/chinaNet.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/chinaNet.png" data-id="certification"/>
         <text>增值电信业务许可证</text>
-        <image src='{{baseUrl}}/static/images/ios.png' mode='widthFix'/>
+        <image src='{{baseUrl}}/static/images/ios.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/ios.png" data-id="certification"/>
         <text>ios软件著作权证</text>
-        <image src='{{baseUrl}}/static/images/android.png' mode='widthFix'/>
+        <image src='{{baseUrl}}/static/images/android.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/android.png" data-id="certification"/>
         <text>Android软件著作权证</text>
-        <image src='{{baseUrl}}/static/images/permits.png' mode='widthFix'/>
+        <image src='{{baseUrl}}/static/images/permits.png' mode='widthFix' bindtap='previewImage' data-url="{{baseUrl}}/static/images/permits.png" data-id="certification"/>
         <text>开户许可证</text>
       </view>
     </view>

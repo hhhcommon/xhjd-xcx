@@ -1,5 +1,6 @@
 /* pages/aboutus/aboutus.wxss */
 @import '/common/css/layout.wxss';
+@import '/templates/QRcode/qr-code.wxss';
 
 .top-bg{
   background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/aboutus_header.png');
@@ -123,30 +124,6 @@
 }
 .about-contact .contact-information .phone{
   font-size: 50rpx;
-}
-.about-contact .qr-imgs{
-  padding: 80rpx 0 0 0;
-}
-.about-contact .qr-img{
-  width: 80%;
-  margin: 0 auto 50rpx;
-  background: url('http://www.xinhuajindian.com/xhjd-web/static/images/qr-bg.png') center no-repeat;
-  background-size: 100% auto;
-}
-.about-contact .qr-img .title{
-  font-size: 40rpx;
-  color: #666;
-  height: 120rpx;
-  line-height: 120rpx;
-  text-align: center;
-}
-.about-contact .qr-img .img{
-  padding: 40rpx 0;
-  text-align: center;
-}
-.about-contact .qr-img .img > image{
-  width: 70%;
-  height: auto;
 }
 /* 人才招聘 */
 .recruit .paragraph{

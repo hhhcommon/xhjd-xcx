@@ -1,0 +1,10 @@
+.card-list{
+  padding: 50rpx 20rpx;
+}
+.card-item{
+  margin-bottom: 20rpx;
+}
+.card-item .card-image{
+  width: 100%;
+  height: auto;
+}

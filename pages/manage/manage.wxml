@@ -1,101 +1,13 @@
 <!--pages/manage/manage.wxml-->
+<import src="./template/manage-product.wxml" />
+<import src="./template/manage-lesson.wxml" />
+
 <view class='container manage'>
+  <tab list="{{list}}" selectedId="{{selectedId}}" scroll="{{false}}" bind:tabChange="tabChange"></tab>
   <view class='top-bg'>
     <text>做您身边安全、稳健的互联网财富管理管家</text>
   </view>
-  <view class='wrapper'>
-    <view class='title-wrapper'>
-      <view class='title'><text>新手福利</text></view>
-      <view class='sub-title'>理财零门槛，手把手教您钱生钱</view>
-    </view>
-    <view class='new-welfare'>
-      <view class='welfare-item'>
-        <view class='welfare-title'>新手专享标</view>
-        <view class='line'></view>
-        <view class='welfare-content'>
-          <view class='number'>15%</view>
-          <view class='explain'>年化收益率</view>
-          <view class='des'>1000元起投 | 15天短期高息</view>
-        </view>
-      </view>
-      <view class='welfare-item'>
-        <view class='welfare-title'>注册领取9999元理财券</view>
-        <view class='line'></view>
-        <view class='welfare-content'>
-          <view class='qr-image'>
-            <image src='{{baseUrl}}/static/images/xhjd.png' mode='widthFix'/>
-            <text decode class='right'>扫\n码\n注\n册\n领\n取</text>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class='title-wrapper'>
-      <view class='title'><text>多款产品，灵活方便</text></view>
-    </view>
-    <view class='product-list'>
-     <block wx:for="{{productList}}" wx:key="{{item.id}}">
-      <view class='product-item'>
-        <view class="header">
-          <text>{{item.title}}</text>
-          <text class="embellish" wx:if="{{item.productType === 1}}">限购一次</text>
-        </view>
-        <view class="content">
-          <view class="data-wrapper">
-            <view class="data-item">
-              <view class="description">{{(item.productType === 1 ? '超高年化收益率' : '预期年化收益率')}}</view>
-              <view class="num">{{item.displayBaseEarnings + item.displayExtraEarnings}}%</view>
-            </view>
-            <view class="data-item">
-              <view class="description">超短理财期限</view>
-              <view class="num">{{item.lcqx}}<text>天</text></view>
-            </view>
-            <view class="data-item">
-              <view class="description">起投金额</view>
-              <view class="num">{{(item.atleastMoney / 100)}}<text>元</text></view>
-            </view>
-          </view>
-          <view class="invest-btn" bindtap='showModal'>立即投资</view>
-        </view>
-      </view>
-      </block>
-      <view class='null-product' wx:if="{{productList.length <= 0}}">暂无产品</view>
-    </view>
-    <view class='title-wrapper'>
-      <view class='title'><text>仅需3步，轻松理财</text></view>
-    </view>
-    <view class='step-wrapper'>
-      <view class='step-item'>
-        <view class='num'>01</view>
-        <view class='text'>扫描下载APP</view>
-        <view class='img'>
-          <image src='{{baseUrl}}/static/images/download.png' mode='widthFix'/>
-        </view>
-        <view class='des'>苹果、安卓手机都适用</view>
-      </view>
-      <view class='step-item'>
-        <view class='num'>02</view>
-        <view class='text'>注册账户</view>
-        <view class='img'>
-          <image src='{{baseUrl}}/static/images/mobile1.png' style='width: 70%;' mode='widthFix'/>
-        </view>
-        <view class='des'>我的」-点击「注册送红包」</view>
-      </view>
-      <view class='step-item'>
-        <view class='num'>03</view>
-        <view class='text'>绑卡认证理财</view>
-        <view class='img'>
-          <image src='{{baseUrl}}/static/images/mobile2.png' mode='widthFix'/>
-        </view>
-        <view class='des'>点击「立即投资」绑定银行卡</view>
-      </view>
-    </view>
-  </view>
-  <modal id="Modal">
-    <view slot="body" class='modal-body'>
-      <view class='modal-image'>
-        <view class='modal-close' catchtap='cloceModal'>×</view>
-        <image src='{{baseUrl}}/static/images/QR_img.png' mode='widthFix'/>
-      </view>
-    </view>
-  </modal>
+  <template is="manage-product" data="{{ baseUrl, selectedId, productList }}"></template>
+  <template is="manage-lesson" data="{{ baseUrl, selectedId, lesson }}"></template>
+  
 </view>

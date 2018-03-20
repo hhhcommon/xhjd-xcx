@@ -2,6 +2,7 @@
   <view class='wrapper information-bigissues' wx:if="{{selectedId === '6'}}">
     <view class='column'>
       <text class='title'>重大事项</text>
+      <table list="{{ bigissues.list }}" align="{{ bigissues.align }}" width="{{ bigissues.width }}"></table>
     </view>
   </view>
 </template>

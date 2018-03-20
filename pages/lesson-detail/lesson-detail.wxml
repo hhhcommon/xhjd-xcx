@@ -1,0 +1,4 @@
+<!--pages/lesson-detail.wxml-->
+<view class='lesson-detail'>
+  <rich-text nodes="{{nodes}}" class='rich-text'></rich-text>
+</view>

@@ -2,7 +2,7 @@
   <view class='wrapper information-business' wx:if="{{selectedId === '1'}}">
     <view class='column'>
       <text class='title'>工商信息</text>
-      <table list="{{ business.list }}" align="{{ business.align }}"></table>
+      <table list="{{ business.list }}" align="{{ business.align }}" width="{{ business.width }}"></table>
     </view>
   </view>
 </template>

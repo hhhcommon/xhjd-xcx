@@ -1,0 +1,4 @@
+<!--pages/runreports-detail.wxml-->
+<view class='runreports-detail'>
+  <image src='{{imageBg}}' mode='widthFix' bindtap='previewImage' data-url="{{imageBg}}"/>
+</view>

@@ -1,6 +1,8 @@
 // pages/aboutus/aboutus.js
 const baseUrl = require('../../config').baseUrl;
-Page({
+const { Image, extend } = require('../../common/js/common.js');
+
+Page(extend({}, Image, {
   data: {
     baseUrl,
     list: [{
@@ -32,6 +34,22 @@ Page({
         width: 120,
         height: 60
       }],
+    },
+    companyProfile: {
+      previewImages: [
+        `${baseUrl}/static/images/about_header_1.png`,
+        `${baseUrl}/static/images/about_header_3.png`,
+        `${baseUrl}/static/images/about_header_2.png`,
+      ]
+    },
+    certification: {
+      previewImages: [
+        `${baseUrl}/static/images/business.png`,
+        `${baseUrl}/static/images/chinaNet.png`,
+        `${baseUrl}/static/images/ios.png`,
+        `${baseUrl}/static/images/android.png`,
+        `${baseUrl}/static/images/permits.png`
+      ]
     }
   },
   onLoad: function (options) {
@@ -51,4 +69,4 @@ Page({
       phoneNumber: '400-157-6800'
     })
   }
-})
+}))

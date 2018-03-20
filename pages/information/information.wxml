@@ -13,16 +13,16 @@
 <view class='container information'>
   <tab list="{{list}}" selectedId="{{selectedId}}" bind:tabChange="tabChange"></tab>
   <view class='top-bg'>
-    <text>“新华网 • 互联网经济”战略合作伙伴</text>
+    <text>信息披露阳光透明，放心理财</text>
   </view>
   <template is="information-business" data="{{ baseUrl, selectedId, business }}"></template>
-  <template is="information-shareholder" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-shareholder" data="{{ baseUrl, selectedId, shareholder }}"></template>
   <template is="information-organization" data="{{ baseUrl, selectedId }}"></template>
   <template is="information-channel" data="{{ baseUrl, selectedId }}"></template>
-  <template is="information-records" data="{{ baseUrl, selectedId }}"></template>
-  <template is="information-bigissues" data="{{ baseUrl, selectedId }}"></template>
-  <template is="information-charge" data="{{ baseUrl, selectedId }}"></template>
-  <template is="information-runreports" data="{{ baseUrl, selectedId }}"></template>
-  <template is="educational" data="{{ baseUrl, selectedId }}"></template>
+  <template is="information-records" data="{{ baseUrl, selectedId, records }}"></template>
+  <template is="information-bigissues" data="{{ baseUrl, selectedId, bigissues }}"></template>
+  <template is="information-charge" data="{{ baseUrl, selectedId, charge }}"></template>
+  <template is="information-runreports" data="{{ baseUrl, selectedId, runreports }}"></template>
+  <template is="educational" data="{{ baseUrl, selectedId, educational }}"></template>
   <template is="information-statement" data="{{ baseUrl, selectedId }}"></template>
 </view>

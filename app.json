@@ -1,16 +1,18 @@
 {
-  "pages":[
+  "pages": [
+    "pages/index/index",
+    "pages/manage/manage",
     "pages/information/information",
     "pages/aboutus/aboutus",
-    "pages/manage/manage",
-    "pages/index/index",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/runreports-detail/runreports-detail",
+    "pages/lesson-detail/lesson-detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "新华金典",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#aaaaaa",
@@ -26,7 +28,7 @@
       },
       {
         "pagePath": "pages/manage/manage",
-        "text": "我要理财",
+        "text": "理财",
         "iconPath": "images/tabBar/coupons.png",
         "selectedIconPath": "images/tabBar/coupons_fill.png"
       },

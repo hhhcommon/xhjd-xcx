@@ -6,6 +6,8 @@
     <view class="table-item" 
       wx:for="{{ listRow }}"
       wx:key="item"
-      style="text-align: {{ align[index] ? align[index] : 'center' }}">{{ item }}</view>
+      style="{{ width[index] ? ('width:' + width[index] + '%') : 'flex: 1' }}">
+      <text style="text-align: {{ align[index] ? align[index] : 'center' }}" decode>{{ item }}</text>
+      </view>
   </view>
 </view>

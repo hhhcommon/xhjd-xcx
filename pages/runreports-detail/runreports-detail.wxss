@@ -1,0 +1,9 @@
+/* pages/runreports-detail.wxss */
+.runreports-detail{
+  width: 100%;
+  font-size: 0;
+}
+.runreports-detail > image{
+  width: 100%;
+  height: auto;
+}
