@@ -144,7 +144,6 @@ Page({
     })
   },
   palyVideo: function(event) {
-    console.log(event)
     const src = event.currentTarget.dataset.src
     const oldSrc = this.data.videoUrl
     this.setData({
@@ -161,5 +160,12 @@ Page({
       videoPlaying: false,
       autoplay: true
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '新华金典',
+      path: '/pages/index/index',
+      imageUrl: 'http://www.xinhuajindian.com/xhjd-h5/static/images/about-header.png'
+    }
   }
 })

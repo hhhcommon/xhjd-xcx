@@ -83,7 +83,7 @@
   width: 35%;
 }
 .links .links-item::after{
-  content: '立即进入';
+  content: '深度合作';
   position: absolute;
   right: 10%;
   top: 42%;

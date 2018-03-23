@@ -1,4 +1,5 @@
 const decode = require('./decode.js')
+const config = require('../config')
 
 const METHOD = {
   GET: 'GET',
@@ -28,9 +29,14 @@ class Request {
   }
 
   request({ url, method, header = {}, data }) {
+    data.url = url;
+    data.header = header;
+    wx.showLoading({
+      title: '加载中',
+    })
     return new Promise((resolve, reject) => {
       wx.request({
-        url: (this._baseUrl || '') + url,
+        url: (config.serverUrl || url),
         method: method || METHOD.GET,
         data: data,
         header: {
@@ -38,10 +44,19 @@ class Request {
           ...header
         },
         success: res => {
-          res.data.data = JSON.parse(decode.getData(res.data.data))
-          this.intercept(res.data) && resolve(res.data)
+          if (res.data.error === 0) {
+            if (res.data.data.data) {
+              res.data.data.data = JSON.parse(decode.getData(res.data.data.data))
+            }
+            this.intercept(res.data.data) && resolve(res.data.data)
+          } else {
+            reject(res.data)
+          }
         },
-        fail: reject
+        fail: reject,
+        complete: () => {
+          wx.hideLoading()
+        }
       })
     })
   }

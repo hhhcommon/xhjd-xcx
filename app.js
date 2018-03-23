@@ -4,8 +4,5 @@ App({
   },
   globalData: {
     userInfo: null
-  },
-  onShareAppMessage: function () {
-
   }
 })
