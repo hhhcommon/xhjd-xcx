@@ -45,7 +45,7 @@ class Request {
         },
         success: res => {
           if (res.data.error === 0) {
-            if (res.data.data.data) {
+            if (res.data.data.data && data.decode) {
               res.data.data.data = JSON.parse(decode.getData(res.data.data.data))
             }
             this.intercept(res.data.data) && resolve(res.data.data)

@@ -33,12 +33,12 @@
       <view class='product-item'>
         <view class="header">
           <text>{{item.title}}</text>
-          <text class="embellish" wx:if="{{item.productType === 1}}">限购一次</text>
+          <text class="embellish" wx:if="{{item.productType === '1'}}">限购一次</text>
         </view>
         <view class="content">
           <view class="data-wrapper">
             <view class="data-item">
-              <view class="description">{{(item.productType === 1 ? '超高年化收益率' : '预期年化收益率')}}</view>
+              <view class="description">{{(item.productType === '1' ? '超高年化收益率' : '预期年化收益率')}}</view>
               <view class="num">{{item.displayBaseEarnings + item.displayExtraEarnings}}%</view>
             </view>
             <view class="data-item">

@@ -136,8 +136,8 @@
   color: #454545;
 }
 .product-list .product-item .header .embellish{
-  height: 60rpx;
-  line-height: 56rpx;
+  height: 58rpx;
+  line-height: 54rpx;
   color: #fff;
   font-size: 10px;
   padding: 0 20rpx 0 30rpx; 

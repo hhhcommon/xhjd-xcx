@@ -4,7 +4,9 @@ const config = require('../config')
 export function getManageList() {
   const url = config.manageUrl
 
-  const data = {}
+  const data = {
+    decode: true
+  }
 
   return req.post(url, data)
 }

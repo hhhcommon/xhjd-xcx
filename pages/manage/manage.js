@@ -19,13 +19,13 @@ Page({
     lesson: {
       list: [{
         img: 'http://xinhuagolden.oss-cn-hzfinance.aliyuncs.com/image/mobile_img/banner/cdaac0d1-d888-47f3-8b96-64d864a4b717.png',
-        url: '/pages/lesson-detail/lesson-detail?url=http://h5.xinhuajindian.com/xhjd-h5/views/home/third-phase.html'
+        url: '/pages/lesson-detail/lesson-detail?url=http://h5.xinhuajindian.com/xhjd-h5/views/home/xhjd-class.html%3Fnum=3'
       }, {
         img: 'http://xinhuagolden.oss-cn-hzfinance.aliyuncs.com/image/mobile_img/notice/slt/34d757e4-bab3-486d-9177-badf4ca45a56.png',
-        url: '/pages/lesson-detail/lesson-detail?url=http://www.xinhuajindian.com/xhjd-h5/views/home/second-phase.html'
+        url: '/pages/lesson-detail/lesson-detail?url=http://h5.xinhuajindian.com/xhjd-h5/views/home/xhjd-class.html%3Fnum=2'
       }, {
         img: 'http://xinhuagolden.oss-cn-hzfinance.aliyuncs.com/image/mobile_img/notice/slt/61280bcd-af41-4016-a7f0-22adafd39f99.png',
-        url: '/pages/lesson-detail/lesson-detail?url=http://www.xinhuajindian.com/xhjd-h5/views/home/network-loan.html'
+        url: '/pages/lesson-detail/lesson-detail?url=http://h5.xinhuajindian.com/xhjd-h5/views/home/xhjd-class.html%3Fnum=1'
       }]
     }
   },
@@ -63,6 +63,7 @@ Page({
   getManageProduct: function() {
     getManageList().then((res) => {
       let list = res.data.productList;
+      console.log(list)
       const newList = [];
       const otherList = [];
       list.sort((a, b) => {
@@ -86,7 +87,7 @@ Page({
         list.forEach((item) => {
           lessonList.push({
             img: item.imgUrl,
-            url: `/pages/lesson-detail/lesson-detail?url=${item.hdUrl}`
+            url: `/pages/lesson-detail/lesson-detail?url=${escape(item.hdUrl)}`
           })
         })
         this.setData({
