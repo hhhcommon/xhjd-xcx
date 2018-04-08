@@ -1,6 +1,7 @@
 // pages/information/information.js
 const baseUrl = require('../../config').baseUrl;
 const { Image, extend } = require('../../common/js/common.js');
+import { getRunreportsData } from '../../api/information.js';
 
 Page(extend({}, Image, {
   data: {
@@ -114,20 +115,14 @@ Page(extend({}, Image, {
       ]
     },
     runreports: {
-      list: [{
-        img: `${baseUrl}/static/images/month-report/report_title2.png`,
-        url: '/pages/runreports-detail/runreports-detail?id=2'
-      }, {
-        img: `${baseUrl}/static/images/report_title.png`,
-        url: '/pages/runreports-detail/runreports-detail?id='
-      }]
+      list: []
     },
     educational: {
       classSelected: '1'
     }
   },
   onLoad: function (options) {
-  
+    this.getRunreports()
   },
   onReady: function () {
   
@@ -144,5 +139,24 @@ Page(extend({}, Image, {
     this.setData({
       ['educational.classSelected']: id
     })
-  }
+  },
+  getRunreports: function () {
+    getRunreportsData().then((res) => {
+      console.log(res)
+      const list = res.list;
+      const runreportsList = []
+      if (list.length > 0) {
+        list.forEach((item) => {
+          runreportsList.push({
+            title: item.title,
+            img: item.showUrl,
+            url: `/pages/runreports-detail/runreports-detail?url=${escape(item.httpUrl)}`,
+          })
+        })
+        this.setData({
+          ['runreports.list']: runreportsList
+        })
+      }
+    })
+  }, 
 }))

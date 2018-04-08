@@ -5,7 +5,7 @@
     duration="{{duration}}">
       <block wx:for="{{carousel}}" wx:key="{{item}}">
         <swiper-item>
-          <navigator url="{{item.url}}" wx:if="{{item.url}}">
+          <navigator url="/pages/news/news?url={{item.url}}" wx:if="{{item.url}}">
             <image src="{{item.image}}" class="slide-image" mode='widthFix'/>
           </navigator>
           <view wx:else class='video-item' bindtap="palyVideo" data-src="{{item.src}}">

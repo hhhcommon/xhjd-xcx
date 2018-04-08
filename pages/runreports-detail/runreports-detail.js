@@ -1,26 +1,20 @@
 // pages/runreports-detail.js
-const baseUrl = require('../../config').baseUrl;
-const { Image, extend } = require('../../common/js/common.js');
+import { getDetail } from '../../api/detail.js';
 
-Page(extend({}, Image, {
+Page({
   data: {
-    baseUrl,
-    id: '',
-    imageBg: ''
+    nodes: ''
   },
   onLoad: function (options) {
-    wx.showLoading({
-      title: '加载中',
+    var that = this;
+    var Url = unescape(options.url)
+    var baseUrl = Url.substr(0, Url.lastIndexOf("/") + 1)
+    getDetail(Url).then((res) => {
+      var article = /<body>([\s\S]*?)<\/body>/gi.exec(res)[1];
+      article = article.replace(/src="/g, 'class="rich-image" src="' + baseUrl);
+      that.setData({
+        nodes: article
+      })
     })
-    const id = options.id
-    this.setData({
-      id
-    })
-  },
-  onReady: function () {
-    this.setData({
-      imageBg: `${baseUrl}/static/images/month_report${this.data.id}.png`
-    })
-    wx.hideLoading()
-  },
-}))
+  }
+})

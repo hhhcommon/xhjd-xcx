@@ -2,8 +2,10 @@
 .runreports-detail{
   width: 100%;
   font-size: 0;
+  background-color: #fff;
 }
-.runreports-detail > image{
-  width: 100%;
+.rich-image{
+  width: 100% !important;
   height: auto;
+  margin: 0;
 }
