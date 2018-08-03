@@ -9,3 +9,8 @@
   height: auto;
   margin: 0;
 }
+.bg{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}

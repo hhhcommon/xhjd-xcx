@@ -4,7 +4,7 @@
 .qr-img{
   width: 80%;
   margin: 0 auto 50rpx;
-  background: url('http://www.xinhuajindian.com/xhjd-web/static/images/qr-bg.png') center no-repeat;
+  background: url('http://www.xinhuajindian.com/static/images/qr-bg.png') center no-repeat;
   background-size: 100% auto;
 }
 .qr-img .title{

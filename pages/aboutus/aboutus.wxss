@@ -3,7 +3,7 @@
 @import '/templates/QRcode/qr-code.wxss';
 
 .top-bg{
-  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/aboutus_header.png');
+  background-image: url('http://www.xinhuajindian.com/static/images/aboutus_header.png');
 }
 .column .ceo-sign{
   font-size: 35rpx;

@@ -1,4 +1,4 @@
 <!--pages/runreports-detail.wxml-->
 <view class='runreports-detail'>
-  <rich-text nodes="{{nodes}}" class='rich-text'></rich-text>
+  <image src='{{imgUrl}}' mode='widthFix' class='bg'/>
 </view>

@@ -4,7 +4,7 @@
 @import '/templates/card/card.wxss';
 
 .top-bg{
-  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/information.png');
+  background-image: url('http://www.xinhuajindian.com/static/images/information.png');
 }
 
 /* 官方渠道 */

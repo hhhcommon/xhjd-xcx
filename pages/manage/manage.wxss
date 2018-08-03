@@ -3,7 +3,7 @@
 @import '/templates/card/card.wxss';
 
 .top-bg{
-  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/financing_header.png');
+  background-image: url('http://www.xinhuajindian.com/static/images/financing_header.png');
 }
 .title-wrapper{
   color: #333;
@@ -58,11 +58,11 @@
 }
 .welfare-item:first-child{
   margin-right: 10rpx;
-  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/red-bg.png');
+  background-image: url('http://www.xinhuajindian.com/static/images/red-bg.png');
 }
 .welfare-item:last-child{
   margin-left: 10rpx;
-  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/green-bg.png');
+  background-image: url('http://www.xinhuajindian.com/static/images/green-bg.png');
 }
 .welfare-title{
   font-size: 35rpx;
@@ -143,7 +143,7 @@
   padding: 0 20rpx 0 30rpx; 
   border-radius: 10rpx;
   margin: 2rpx 0 0 12rpx;
-  background-image: url('http://www.xinhuajindian.com/xhjd-web/static/images/Combined_Shape.png');
+  background-image: url('http://www.xinhuajindian.com/static/images/Combined_Shape.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
